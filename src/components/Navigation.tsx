@@ -21,6 +21,15 @@ const Navigation = () => {
     { label: "Gallery", href: "#gallery" },
   ];
 
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Samin-Yasir-Resume.pdf";
+    link.download = "Samin-Yasir-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -43,7 +52,7 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="default" size="sm" className="gap-2">
+            <Button variant="default" size="sm" className="gap-2" onClick={handleResumeDownload}>
               <Download className="w-4 h-4" />
               Resume
             </Button>

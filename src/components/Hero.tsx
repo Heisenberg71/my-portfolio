@@ -1,12 +1,15 @@
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FaGithub, FaLinkedin, FaGraduationCap } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGraduationCap, FaYoutube, FaMedium, FaGoodreads } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 
 const Hero = () => {
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/Heisenberg71", icon: FaGithub },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/Heisenberg71/", icon: FaLinkedin },
+    { name: "YouTube", url: "https://www.youtube.com/@saminYasir007/", icon: FaYoutube },
+    { name: "Medium", url: "https://medium.com/@saminYasir/", icon: FaMedium },
+    { name: "GoodReads", url: "https://www.goodreads.com/user/show/103607549-samin/", icon: FaGoodreads },
     // { name: "ResearchGate", url: "https://www.researchgate.net/profile/Kallol-Naha", icon: FaGraduationCap },
     // { name: "Google Scholar", url: "https://scholar.google.com/citations?user=nzL0EKoAAAAJ&hl=en", icon: SiGooglescholar },
   ];
@@ -29,7 +32,7 @@ const Hero = () => {
               Samin Yasir
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              Backend Engineer & NLP Researcher
+              Software Engineer & NLP Researcher
             </p>
           </div>
 
