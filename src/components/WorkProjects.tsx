@@ -5,6 +5,27 @@ import { ExternalLink } from "lucide-react";
 const WorkProjects = () => {
   const projects = [
     {
+      title: "KONA Financial Card Personaization System (KONA CPS)",
+      description:
+        "Developed Personalization System's data parser for puting customer specific data into the chip of the card. KONA CPS is currently being used by Islamic Bank Bangladesh Limited for their cards issuance.",
+      source: "KONA Software Lab. LTD.",
+      tags: ["JAVA", "Spring-boot"],
+    },
+    {
+      title: "KONA Token Service Provider (KONA TSP)",
+      description:
+        "Designed and implemented a Token Service Provider(TSP) adhering to MasterCard Specifications, ensuring secure payment token management through Test-Driven Development(TDD).",
+      source: "KONA Software Lab. LTD.",
+      tags: ["JAVA", "Spring-boot", "MariaDB", "MongoDB", "Kafka", "TDD"],
+    },
+    {
+      title: "KONA Financial Card Management System - Issuance (KONA CMS)",
+      description:
+        "Engineering backend modules for a secure, high-performance, and scalable Card Issuance System for Debit, Credit, and Prepaid cards used by financial institutions using a JAVA framework, Spring Boot.",
+      source: "KONA Software Lab. LTD.",
+      tags: ["JAVA", "Spring-boot", "Postgres", "Kafka"],
+    },
+    {
       title: "AI Helper Bot",
       description:
         "Developed a custom Q&A chatbot leveraging OpenAI SDKs and LangChain, enabling dynamic and accurate question-answering capabilities. Integrated OpenAI's NLP with LangChain for efficient query handling and modular implementation and build using interface using Streamlit.",
