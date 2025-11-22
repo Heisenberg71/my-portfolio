@@ -37,8 +37,11 @@ const Resume = () => {
       period: "2018 - 2023",
       degree: "B.Sc. in Computer Science and Engineering",
       institution: "Shahjalal University of Science and Technology, Sylhet, Bangladesh",
-      description:
-        "Earned a Bachelor of Science degree, developing a strong foundation in Algorithms, Data Structures, and Engineering principles. Graduated with distinction while actively participating in competitive programming contests and contributing to various technical clubs.",
+      description: [
+        "Developed a strong foundation in Algorithms, Data Structures, and Engineering principles",
+        "Graduated with distinction while actively participating in competitive programming contests",
+        "Organized programming contests and workshops to foster growth and excellence in the community",
+      ],
       cgpa: "3.75 / 4.00",
     },
   ];
@@ -150,7 +153,21 @@ const Resume = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <p className="text-muted-foreground leading-relaxed text-sm">{edu.description}</p>
+                  <ul className="space-y-2">
+                    {Array.isArray(edu.description) ? (
+                      edu.description.map((point, idx) => (
+                        <li key={idx} className="text-muted-foreground text-sm flex gap-3">
+                          <span className="text-primary font-bold flex-shrink-0">•</span>
+                          <span>{point}</span>
+                        </li>
+                      ))
+                    ) : (
+                      <li className="text-muted-foreground text-sm flex gap-3">
+                        <span className="text-primary font-bold flex-shrink-0">•</span>
+                        <span>{edu.description}</span>
+                      </li>
+                    )}
+                  </ul>
                   <div className="flex items-center gap-2">
                     <Badge variant="outline" className="font-semibold text-primary border-primary">
                       CGPA: {edu.cgpa}
