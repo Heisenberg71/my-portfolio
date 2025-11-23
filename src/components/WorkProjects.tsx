@@ -66,6 +66,15 @@ const WorkProjects = () => {
       ],
       source: "Weather Data Analysis System",
       tags: ["Java", "Spring-boot", "Redis", "Postgres", "Docker"],
+    },
+    {
+      title: "Car Game",
+      description: [
+        "Optimized complex SQL queries to collect and process weather data from VisualCrossing API and persist in PostgreSQL with Redis caching",
+        "Containerized the application using Docker to manage Redis and PostgreSQL dependencies for scalable deployment"
+      ],
+      source: "Car Racing Game in windows terminal",
+      tags: ["C++", "Window's API"],
     }
   ];
 
@@ -83,7 +92,7 @@ const WorkProjects = () => {
               <CardHeader>
                 <CardTitle className="text-lg mb-3 flex items-start justify-between gap-2">
                   <span className="font-bold">{project.title}</span>
-                  <ExternalLink className="w-4 h-4 flex-shrink-0 mt-1 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {/* <ExternalLink className="w-4 h-4 flex-shrink-0 mt-1 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" /> */}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
